@@ -1,6 +1,7 @@
 // import { post } from "./postFetch.js";
 // import { getFetch } from "./getFetch.js";
 import { getFetchAttendees } from "./getFetchAttendees.js";
+import { postNewEvent } from "./postNewEvent.js";
 
 export function test() {
   let eventContainer = document.querySelector(".event-container");
@@ -16,6 +17,7 @@ export function test() {
     console.log(inputEventValue);
     // getFetch();
     // post(inputEventValue);
-    getFetchAttendees(inputEventValue);
+    // getFetchAttendees(inputEventValue);
+    postNewEvent(inputEventValue);
   });
 }
