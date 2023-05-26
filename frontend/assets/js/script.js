@@ -1,13 +1,15 @@
+
 import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
 import { deleteEvent } from "./deleteEvent.js";
-import { displayEvent } from "./displayEventTestyyyyyyy.js";
+import { displayEventsInfo } from "./displayEvents.js";
+
+displayEventsInfo();
 
 // test();
 
 createEvent();
 // deleteEvent("51a5ac76bb03");
-displayEvent();
 
 
 // src
@@ -28,3 +30,4 @@ displayEvent();
 //DO
 //  Allow users to create events 
 //  Delete an event
+

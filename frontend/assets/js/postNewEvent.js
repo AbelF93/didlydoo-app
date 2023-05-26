@@ -4,6 +4,7 @@ export function postNewEvent(name) {
   console.log("P O S T " + nameData);
 
   fetch("http://localhost:3000/api/events/", {
+
     method: "POST",
 
     body: JSON.stringify({
@@ -13,12 +14,14 @@ export function postNewEvent(name) {
       dates: ["1994-10-27"],
     }),
 
+
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
   })
     .then((response) => response.json())
     .then((json) => console.log(json));
+
 
   //postAttendees
   // fetch("http://localhost:3000/api/attendees/", {
@@ -34,3 +37,4 @@ export function postNewEvent(name) {
   //   .then((response) => response.json())
   //   .then((json) => console.log(json));
 }
+
