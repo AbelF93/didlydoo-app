@@ -1,12 +1,12 @@
 import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
 import { deleteEvent } from "./deleteEvent.js";
-import { displayEvent } from "./displayEvent.js";
+import { displayEvent } from "./displayEventTestyyyyyyy.js";
 
 // test();
 
 createEvent();
-// deleteEvent();
+// deleteEvent("51a5ac76bb03");
 displayEvent();
 
 
