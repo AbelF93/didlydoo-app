@@ -1,6 +1,3 @@
-import { test } from "./test.js";
+import { displayEventsInfo } from "./displayEvents.js";
 
-test();
-
-// src
-// https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/
+displayEventsInfo();
