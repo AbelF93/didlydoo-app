@@ -1,3 +1,3 @@
-import { test } from "./test.js";
+import { displayEventsInfo } from "./displayEvents.js";
 
-test();
+displayEventsInfo();
