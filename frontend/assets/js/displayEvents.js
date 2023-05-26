@@ -1,4 +1,4 @@
-
+import { deleteEvent } from "./deleteEvent.js";
 
 export function displayEventsInfo() {
     const eventList = document.getElementById('event-list');
@@ -33,7 +33,15 @@ export function displayEventsInfo() {
                 let eventDescription = document.createElement('p');
                 eventDescription.textContent = json[i].description;
                 eventDescription.setAttribute('class','event-description');
-                
+
+                console.log(json[i].id);
+                let idEvent = json[i].id;
+                let deleteButton = document.createElement("button");
+                deleteButton.classList.add("delete-button");
+                deleteButton.textContent = "Delete";
+                eventContainer.appendChild(deleteButton);
+                deleteButton.addEventListener("click",deleteEvent(idEvent));
+
                 eventContainer.appendChild(eventName);
                 eventContainer.appendChild(eventDescription);
                 eventList.appendChild(eventContainer);

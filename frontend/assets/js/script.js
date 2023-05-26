@@ -1,16 +1,12 @@
 
 import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
-import { deleteEvent } from "./deleteEvent.js";
 import { displayEventsInfo } from "./displayEvents.js";
+import { createForm } from "./createForm.js";
 
-displayEventsInfo();
-
-// test();
-
+createForm();
 createEvent();
-// deleteEvent("51a5ac76bb03");
-
+displayEventsInfo();
 
 // src
 // https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/

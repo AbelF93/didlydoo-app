@@ -1,4 +1,4 @@
-export function deleteEvent(id){
+export function deleteEvent(){
 
     try{
         fetch(`http://localhost:3000/api/events/${id}`, {
