@@ -13,7 +13,8 @@ export function test() {
     console.log(inputEventValue);
     // getFetch();
     // post(inputEventValue);
-    // getFetchAttendees(inputEventValue);
-    //postNewEvent(inputEventValue);
+
+    getFetchAttendees(inputEventValue);
+    // postNewEvent(inputEventValue);
   });
 }
