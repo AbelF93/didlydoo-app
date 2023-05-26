@@ -12,5 +12,4 @@ export function deleteEvent(id){
     
     }
 
-
 }
