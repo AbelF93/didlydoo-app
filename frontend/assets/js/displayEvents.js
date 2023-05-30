@@ -49,13 +49,30 @@ export function displayEventsInfo() {
           eventList.appendChild(eventContainer);
 
           //create a table with the elements
+          console.log(json[i].dates[i].date);
+          const datesArray = json[i].dates[1].date;
           const eventTable = document.createElement("table");
-          const eventCoreTable = document.createElement("tbody");
-          //generate cells
-          for (let r = 0; r < 3; r++) {
-            const row = document.createElement("tr");
-          }
-        }
+
+           const tableRow = document.createElement("tr");
+           tableRow.textContent ="attendee";
+           const tableRow2 = document.createElement("tr");
+           tableRow2.textContent = "attendee1";
+         // const Rows= document.querySelectorall("tr");
+          
+          const headerCell = document.createElement('td');
+          headerCell.textContent = datesArray;
+          tableRow.appendChild(headerCell);
+          eventTable.appendChild(tableRow);
+          eventTable.appendChild(tableRow2);
+          headerCell.style.border= "solid";
+          eventTable.style.border= "solid";
+          eventContainer.appendChild(eventTable);
+          
+          
+        
+      }
+        
+
       });
   } catch (error) {
     console.error("Error:", error);
