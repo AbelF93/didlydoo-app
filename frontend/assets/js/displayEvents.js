@@ -60,6 +60,12 @@ export function displayEventsInfo() {
           editButton.addEventListener("click", () => {
             modal.showModal();
             editEvent(idEvent, name, author, description);
+            // let author = json[i].author;
+            // let name = json[i].name;
+            // let description = json[i].description;
+            console.log(json[i].author);
+            console.log(json[i].name);
+            console.log(json[i].description);
           });
 
           // Petits appendChild des familles
