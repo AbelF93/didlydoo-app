@@ -53,10 +53,12 @@ export function displayEventsInfo() {
 
           //Create Edit Button
           let editButton = document.createElement("button");
+          let modal = document.querySelector("#edit-event-modal");
           editButton.classList.add("edit-button");
           editButton.textContent = "Edit";
           eventContainer.appendChild(editButton);
           editButton.addEventListener("click", () => {
+            modal.showModal();
             editEvent(name, author, description);
           });
 
