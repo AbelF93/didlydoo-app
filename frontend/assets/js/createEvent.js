@@ -35,12 +35,22 @@ export function createEvent(){
                     "Content-type": "application/json; charset=UTF-8",
                 },
             })
+               fetch("http://localhost:3000/api/attendees", {
+                method: "POST",
+                body: JSON.stringify({ 
+                    name: nameValue, 
+                    dates:  [dateValue], 
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                },
+            })
             .then((response) => response.json())
             .then((json) => console.log(json));
         } catch (error) {
             console.error("Error:", error);
         }
+
     });
 }
-
 
