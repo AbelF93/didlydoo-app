@@ -1,4 +1,5 @@
 import { deleteEvent } from "./deleteEvent.js";
+import { editEvent } from "./editEvent.js";
 
 export function displayEventsInfo() {
   const eventList = document.getElementById("event-list");
@@ -24,6 +25,11 @@ export function displayEventsInfo() {
         }
 
         for (let i = 0; i < json.length; i++) {
+          //define variable
+          let author = json[i].author;
+          let name = json[i].name;
+          let description = json[i].description;
+          //create contain
           let eventContainer = document.createElement("div");
           let eventName = document.createElement("h2");
           eventName.textContent = json[i].author + "'s " + json[i].name;
@@ -32,6 +38,7 @@ export function displayEventsInfo() {
           eventDescription.textContent = json[i].description;
           eventDescription.setAttribute("class", "event-description");
 
+          //create Delete Button
           let idEvent = json[i].id;
           let deleteButton = document.createElement("button");
           deleteButton.classList.add("delete-button");
@@ -42,8 +49,20 @@ export function displayEventsInfo() {
           deleteButton.addEventListener("click", () => {
             deleteEvent(idEvent);
           });
-          console.log("id => " + json[i].id);
+          // console.log("id => " + json[i].id);
 
+          //Create Edit Button
+          let editButton = document.createElement("button");
+          let modal = document.querySelector("#edit-event-modal");
+          editButton.classList.add("edit-button");
+          editButton.textContent = "Edit";
+          eventContainer.appendChild(editButton);
+          editButton.addEventListener("click", () => {
+            modal.showModal();
+            editEvent(idEvent, name, author, description);
+          });
+
+          // Petits appendChild des familles
           eventContainer.appendChild(eventName);
           eventContainer.appendChild(eventDescription);
           eventList.appendChild(eventContainer);

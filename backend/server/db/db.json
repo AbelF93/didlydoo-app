@@ -1,93 +1,114 @@
 [
   {
-    "id": "c88db1a2a9ce",
-    "name": "baptiste annif",
-    "author": "hugo",
-    "description": "pour feter les 25 ans du BAT le justicier de clairmont j'ai decidé d'organiser une anniversaire surprise donc venez nombreux",
-    "dates": [
-      "2023-05-31"
-    ],
-    "created_at": "2023-05-30T12:31:34.356Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T12:31:34.356Z",
-    "attendees": []
-  },
-  {
-    "id": "ee02296a495b",
-    "name": "lzlzlzlzlzl",
-    "author": "hlhlhlhl",
-    "description": "zzddzdz",
+    "id": "01ca7ca6ed1f",
+    "name": "WALLAH",
+    "author": "Bilal",
+    "description": "Bilal",
     "dates": [
       "2023-06-03"
     ],
-    "created_at": "2023-05-30T11:46:13.721Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T11:46:13.721Z",
+    "created_at": "2023-05-30T12:05:13.387Z",
+    "num_modification": 5,
+    "last_modification": "2023-05-30T14:09:10.687Z",
     "attendees": []
   },
   {
-    "id": "419c37ee769c",
-    "name": "lzlzlzlzl",
-    "author": "zlzlzzlz",
-    "description": "zzzdzzdzdd",
+    "id": "b2e1ad4e373d",
+    "name": "Name",
+    "author": "author",
+    "description": "description",
     "dates": [
-      "2023-05-31"
+      "2023-06-02"
     ],
-    "created_at": "2023-05-30T11:46:00.881Z",
+    "created_at": "2023-05-30T09:59:45.182Z",
     "num_modification": 0,
-    "last_modification": "2023-05-30T11:46:00.881Z",
+    "last_modification": "2023-05-30T09:59:45.182Z",
     "attendees": []
   },
   {
-    "id": "ca207a6444bc",
-    "name": "zzlzlzllz",
-    "author": "tltltlt",
-    "description": "lalalala",
+    "id": "ddbc5fb92a76",
+    "name": "Event Name",
+    "author": "Bilal",
+    "description": "Grosse teuf sa mère ",
     "dates": [
-      "2023-06-03"
+      "2023-07-01"
     ],
-    "created_at": "2023-05-30T11:44:00.860Z",
+    "created_at": "2023-05-30T09:49:32.120Z",
     "num_modification": 0,
-    "last_modification": "2023-05-30T11:44:00.860Z",
+    "last_modification": "2023-05-30T09:49:32.120Z",
     "attendees": []
   },
   {
-    "id": "1beaa0e000b8",
-    "name": "ekekekeke",
-    "author": "eeeeee",
-    "description": "eeezzzz",
+    "id": "36a817870be5",
+    "name": "sdsd",
+    "author": "sdsd",
+    "description": "sdsdsds",
     "dates": [
-      "2023-06-03"
+      "2023-06-02"
     ],
-    "created_at": "2023-05-30T11:43:47.453Z",
+    "created_at": "2023-05-30T08:55:54.333Z",
     "num_modification": 0,
-    "last_modification": "2023-05-30T11:43:47.453Z",
+    "last_modification": "2023-05-30T08:55:54.333Z",
     "attendees": []
   },
   {
-    "id": "d347d7012485",
-    "name": "ekekeke",
-    "author": "eeee",
-    "description": "eeee",
+    "id": "97910e33d17c",
+    "name": "name",
+    "author": "author",
+    "description": "descirption",
     "dates": [
-      "2023-05-19"
+      "2023-06-02"
     ],
-    "created_at": "2023-05-30T11:43:34.821Z",
+    "created_at": "2023-05-30T07:52:40.959Z",
     "num_modification": 0,
-    "last_modification": "2023-05-30T11:43:34.821Z",
+    "last_modification": "2023-05-30T07:52:40.959Z",
     "attendees": []
   },
   {
-    "id": "b0555c8ce959",
-    "name": "ejejejej",
-    "author": "eee",
-    "description": "eee",
+    "id": "f5b6564b5dc4",
+    "name": "My sweet 16",
+    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
+    "author": "John Doe",
     "dates": [
-      "2023-06-01"
+      "2022-03-17",
+      "2022-03-18",
+      "2022-03-21",
+      "2022-03-22"
     ],
-    "created_at": "2023-05-30T11:43:13.696Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T11:43:13.696Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "Michou",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": true
+          },
+          {
+            "date": "2022-03-18",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Jean-Daniel",
+        "dates": [
+          {
+            "date": "2022-03-17",
+            "available": false
+          },
+          {
+            "date": "2022-03-21",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "created_at": "2021-11-15T00:00",
+    "num_modification": 3,
+    "last_modification": "2021-11-15T02:15"
   }
 ]

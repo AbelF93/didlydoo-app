@@ -1,4 +1,3 @@
-import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
 import { displayEventsInfo } from "./displayEvents.js";
 import { createForm } from "./createForm.js";
@@ -13,8 +12,8 @@ displayEventsInfo();
 //TO DO
 //  Allow users to add their availability to an existing event
 //  Edit an event name/description/author
-
-//  You must validate your inputs before sending the data to your backend, inputs required must be filed and shorter than 256 characters. If it's not the case you don't send the request and display the appropriate error below the input.
+// ajouter plusieurs dates
+// balise dialogue
 
 //DOING
 
@@ -23,3 +22,4 @@ displayEventsInfo();
 //DO
 //  Allow users to create events
 //  Delete an event
+//  You must validate your inputs before sending the data to your backend, inputs required must be filed and shorter than 256 characters. If it's not the case you don't send the request and display the appropriate error below the input.
