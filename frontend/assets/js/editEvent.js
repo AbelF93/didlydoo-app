@@ -1,4 +1,4 @@
-export function editEvent(name, author, description) {
+export function editEvent(id, name, author, description) {
   let editEventDialog = document.querySelector("#edit-event-modal");
   let modal = document.querySelector("#edit-event-modal");
 
@@ -16,30 +16,41 @@ export function editEvent(name, author, description) {
   editEventDialog.style.display = "block";
 
   // submit edit event
-  let editEventButton = document.querySelector("#edit-event-button");
-  editEventButton.addEventListener("submit", () => {
-    let nameModale = document.querySelector("#reateEvent-form-name-modale");
-    let authorModale = document.querySelector("#reateEvent-form-author-modale");
+  let editEventForm = document.querySelector("#createEvent-form-modale");
+  editEventForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let nameModale = document.querySelector(
+      "#createEvent-form-name-modale"
+    ).value;
+    let authorModale = document.querySelector(
+      "#createEvent-form-author-modale"
+    ).value;
     let descriptionModale = document.querySelector(
-      "#reateEvent-form-description-modale"
-    );
+      "#createEvent-form-description-modale"
+    ).value;
 
-    console.log("click");
+    console.log(nameModale, authorModale, descriptionModale);
 
-    fetch("http://localhost:3000/api/events", {
-      method: "PATCH",
-      body: JSON.stringify({
-        name: nameModale,
-        author: authorModale,
-        description: descriptionModale,
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+    try {
+      fetch(`http://localhost:3000/api/events/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify({
+          name: nameModale,
+          author: authorModale,
+          description: descriptionModale,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    } catch (error) {
+      console.error("Error:", error);
+    }
+
     console.log("submit");
-    modal.closest();
+    modal.close();
   });
 }

@@ -59,7 +59,7 @@ export function displayEventsInfo() {
           eventContainer.appendChild(editButton);
           editButton.addEventListener("click", () => {
             modal.showModal();
-            editEvent(name, author, description);
+            editEvent(idEvent, name, author, description);
           });
 
           // Petits appendChild des familles
