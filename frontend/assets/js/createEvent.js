@@ -40,5 +40,23 @@ export function createEvent(){
         } catch (error) {
             console.error("Error:", error);
         }
+                try {
+            fetch("http://localhost:3000/api/events/", {
+                method: "POST",
+                body: JSON.stringify({ 
+                    name: nameValue, 
+                    dates:  [dateValue], 
+                    author: authorValue, 
+                    description: descriptionValue 
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8",
+                },
+            })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+        } catch (error) {
+            console.error("Error:", error);
+        }
     });
 };
