@@ -23,13 +23,13 @@ export function createEvent(){
         console.log("description => " + descriptionValue);
 
         try {
-            fetch("http://localhost:3000/api/events/", {
+            fetch("http://localhost:3000/api/events", {
                 method: "POST",
                 body: JSON.stringify({ 
                     name: nameValue, 
                     dates:  [dateValue], 
                     author: authorValue, 
-                    description: descriptionValue 
+                    description: descriptionValue,
                 }),
                 headers: {
                     "Content-type": "application/json; charset=UTF-8",
@@ -41,4 +41,6 @@ export function createEvent(){
             console.error("Error:", error);
         }
     });
-};
+}
+
+

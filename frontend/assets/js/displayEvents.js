@@ -49,30 +49,49 @@ export function displayEventsInfo() {
           eventList.appendChild(eventContainer);
 
           //create a table with the elements
+          //cannot access the datas because it's not able to reach the dates and attendees's arrays
           console.log(json[i].dates[i].date);
-          const datesArray = json[i].dates[1].date;
+          const datesArray = json[i].dates[i];
+          const attendeesArray = datesArray.attendees;
+          console.log(attendeesArray);
           const eventTable = document.createElement("table");
 
-           const tableRow = document.createElement("tr");
+           let tableRow = document.createElement("tr");
            tableRow.textContent = "attendees";
-           const tableRow2 = document.createElement("tr");
-           tableRow2.textContent = "attendee1";
-         // const Rows= document.querySelectorall("tr");
+           
+           
+          // attendeesArray.forEach(a {
           
-          const headerCell = document.createElement('td');
-          headerCell.textContent = datesArray;
-          tableRow.appendChild(headerCell);
+            let attendeeRow = document.createElement("tr");
+            attendeeRow.textContent = attendeesArray[0].name;
+
+            let attendeeRow2 = document.createElement("tr");
+            attendeeRow2.textContent = attendeesArray[1].name;
+        //   });
+          const dateCell = document.createElement('td');
+          dateCell.textContent = datesArray.date;
+   
+          let statusCell = document.createElement('td');
+          statusCell.textContent= attendeesArray[0].available;
+          statusCell.style.border= "solid"; 
+
+          let statusCell2 = document.createElement('td');
+          statusCell2.textContent= attendeesArray[1].available;
+          statusCell2.style.border= "solid";
+       
+
+          tableRow.appendChild(dateCell);
+          attendeeRow.appendChild(statusCell);
+          attendeeRow2.appendChild(statusCell2);
           eventTable.appendChild(tableRow);
-          eventTable.appendChild(tableRow2);
-          headerCell.style.border= "solid";
-          eventTable.style.border= "solid";
-          eventContainer.appendChild(eventTable);
-          
-          
+          eventTable.appendChild(attendeeRow);
+          eventTable.appendChild(attendeeRow2);
+          dateCell.style.border= "solid";
+          statusCell.style.border= "solid";
+          attendeeRow.style.border= "solid";
+          eventContainer.appendChild(eventTable); 
         
       }
-        
-
       });
   } catch (error) {
     console.error("Error:", error);
