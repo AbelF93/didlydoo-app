@@ -54,7 +54,7 @@ export function displayEventsInfo() {
           const eventTable = document.createElement("table");
 
            const tableRow = document.createElement("tr");
-           tableRow.textContent ="attendee";
+           tableRow.textContent = "attendees";
            const tableRow2 = document.createElement("tr");
            tableRow2.textContent = "attendee1";
          // const Rows= document.querySelectorall("tr");
