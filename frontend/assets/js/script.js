@@ -1,17 +1,16 @@
-
 import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
 import { displayEventsInfo } from "./displayEvents.js";
 import { createForm } from "./createForm.js";
-
+import {deleteEvent} from "./deleteEvent.js";
+//86872387d667
+deleteEvent("86872387d667");
 createForm();
 createEvent();
 displayEventsInfo();
 
 // src
 // https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/
-
-
 
 //TO DO
 //  Allow users to add their availability to an existing event
@@ -21,9 +20,8 @@ displayEventsInfo();
 
 //DOING
 
-// Display all the events, including everyone's availability 
+// Display all the events, including everyone's availability
 
 //DO
-//  Allow users to create events 
+//  Allow users to create events
 //  Delete an event
-
