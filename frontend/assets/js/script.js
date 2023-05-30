@@ -2,6 +2,7 @@ import { test } from "./test.js";
 import { createEvent } from "./createEvent.js";
 import { displayEventsInfo } from "./displayEvents.js";
 import { createForm } from "./createForm.js";
+import { maxLengthInput } from "./maxLengthInput.js";
 
 createForm();
 createEvent();
