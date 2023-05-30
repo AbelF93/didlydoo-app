@@ -1,80 +1,10 @@
 [
   {
-    "id": "01ca7ca6ed1f",
-    "name": "WALLAH",
-    "author": "Bilal",
-    "description": "Bilal",
-    "dates": [
-      "2023-06-03"
-    ],
-    "created_at": "2023-05-30T12:05:13.387Z",
-    "num_modification": 5,
-    "last_modification": "2023-05-30T14:09:10.687Z",
-    "attendees": []
-  },
-  {
-    "id": "b2e1ad4e373d",
-    "name": "Name",
-    "author": "author",
-    "description": "description",
-    "dates": [
-      "2023-06-02"
-    ],
-    "created_at": "2023-05-30T09:59:45.182Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T09:59:45.182Z",
-    "attendees": []
-  },
-  {
-    "id": "ddbc5fb92a76",
-    "name": "Event Name",
-    "author": "Bilal",
-    "description": "Grosse teuf sa mère ",
-    "dates": [
-      "2023-07-01"
-    ],
-    "created_at": "2023-05-30T09:49:32.120Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T09:49:32.120Z",
-    "attendees": []
-  },
-  {
-    "id": "36a817870be5",
-    "name": "sdsd",
-    "author": "sdsd",
-    "description": "sdsdsds",
-    "dates": [
-      "2023-06-02"
-    ],
-    "created_at": "2023-05-30T08:55:54.333Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T08:55:54.333Z",
-    "attendees": []
-  },
-  {
-    "id": "97910e33d17c",
-    "name": "name",
-    "author": "author",
-    "description": "descirption",
-    "dates": [
-      "2023-06-02"
-    ],
-    "created_at": "2023-05-30T07:52:40.959Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-30T07:52:40.959Z",
-    "attendees": []
-  },
-  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
     "author": "John Doe",
-    "dates": [
-      "2022-03-17",
-      "2022-03-18",
-      "2022-03-21",
-      "2022-03-22"
-    ],
+    "dates": ["2022-03-17", "2022-03-18", "2022-03-21", "2022-03-22"],
     "attendees": [
       {
         "name": "Michou",
@@ -110,5 +40,57 @@
     "created_at": "2021-11-15T00:00",
     "num_modification": 3,
     "last_modification": "2021-11-15T02:15"
+  },
+  {
+    "id": "38b643aeb883",
+    "name": "The big sale @ The Mall",
+    "description": "I want to buy stuff at the mall, but don't want to go alone who is up?",
+    "author": "Jean D'eau",
+    "dates": [
+      "2022-01-10",
+      "2022-02-10",
+      "2022-03-10",
+      "2022-03-11",
+      "2022-03-12"
+    ],
+    "attendees": [
+      {
+        "name": "Michou",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Jane Doe",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": true
+          },
+          {
+            "date": "2022-02-10",
+            "available": true
+          },
+          {
+            "date": "2022-03-10",
+            "available": true
+          },
+          {
+            "date": "2022-03-11",
+            "available": true
+          },
+          {
+            "date": "2022-03-12",
+            "available": false
+          }
+        ]
+      }
+    ],
+    "created_at": "2021-11-13T14:00",
+    "num_modification": 0,
+    "last_modification": "2021-11-13T14:00"
   }
 ]
