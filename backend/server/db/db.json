@@ -1,101 +1,119 @@
 [
   {
-    "id": "f5b6564b5dc4",
-    "name": "My sweet 16",
-    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
-    "author": "John Doe",
+    "id": "c88db1a2a9ce",
+    "name": "baptiste annif",
+    "author": "hugo",
+    "description": "pour feter les 25 ans du BAT le justicier de clairmont j'ai decidé d'organiser une anniversaire surprise donc venez nombreux",
     "dates": [
-      "2022-03-17",
-      "2022-03-18",
-      "2022-03-21",
-      "2022-03-22"
+      "2023-05-31"
     ],
-    "attendees": [
-      {
-        "name": "Michou",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Jean-Daniel",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
-      }
-    ],
-    "created_at": "2021-11-15T00:00",
-    "num_modification": 3,
-    "last_modification": "2021-11-15T02:15"
+    "created_at": "2023-05-30T12:31:34.356Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T12:31:34.356Z",
+    "attendees": []
   },
   {
-    "id": "38b643aeb883",
-    "name": "The big sale @ The Mall",
-    "description": "I want to buy stuff at the mall, but don't want to go alone who is up?",
-    "author": "Jean D'eau",
+    "id": "ba1e7714477c",
+    "name": "ejjejej",
+    "author": "eeeee",
+    "description": "errererre",
     "dates": [
-      "2022-01-10",
-      "2022-02-10",
-      "2022-03-10",
-      "2022-03-11",
-      "2022-03-12"
+      "2023-05-04"
     ],
-    "attendees": [
-      {
-        "name": "Michou",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Jane Doe",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
-            "available": false
-          }
-        ]
-      }
-    ],
-    "created_at": "2021-11-13T14:00",
+    "created_at": "2023-05-30T12:16:26.256Z",
     "num_modification": 0,
-    "last_modification": "2021-11-13T14:00"
+    "last_modification": "2023-05-30T12:16:26.256Z",
+    "attendees": []
+  },
+  {
+    "id": "f916fc88ae68",
+    "name": "jejejejejej",
+    "author": "okkokoko",
+    "description": "omomomoom",
+    "dates": [
+      "2023-06-02"
+    ],
+    "created_at": "2023-05-30T11:49:12.162Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:49:12.162Z",
+    "attendees": []
+  },
+  {
+    "id": "ee02296a495b",
+    "name": "lzlzlzlzlzl",
+    "author": "hlhlhlhl",
+    "description": "zzddzdz",
+    "dates": [
+      "2023-06-03"
+    ],
+    "created_at": "2023-05-30T11:46:13.721Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:46:13.721Z",
+    "attendees": []
+  },
+  {
+    "id": "419c37ee769c",
+    "name": "lzlzlzlzl",
+    "author": "zlzlzzlz",
+    "description": "zzzdzzdzdd",
+    "dates": [
+      "2023-05-31"
+    ],
+    "created_at": "2023-05-30T11:46:00.881Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:46:00.881Z",
+    "attendees": []
+  },
+  {
+    "id": "ca207a6444bc",
+    "name": "zzlzlzllz",
+    "author": "tltltlt",
+    "description": "lalalala",
+    "dates": [
+      "2023-06-03"
+    ],
+    "created_at": "2023-05-30T11:44:00.860Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:44:00.860Z",
+    "attendees": []
+  },
+  {
+    "id": "1beaa0e000b8",
+    "name": "ekekekeke",
+    "author": "eeeeee",
+    "description": "eeezzzz",
+    "dates": [
+      "2023-06-03"
+    ],
+    "created_at": "2023-05-30T11:43:47.453Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:43:47.453Z",
+    "attendees": []
+  },
+  {
+    "id": "d347d7012485",
+    "name": "ekekeke",
+    "author": "eeee",
+    "description": "eeee",
+    "dates": [
+      "2023-05-19"
+    ],
+    "created_at": "2023-05-30T11:43:34.821Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:43:34.821Z",
+    "attendees": []
+  },
+  {
+    "id": "b0555c8ce959",
+    "name": "ejejejej",
+    "author": "eee",
+    "description": "eee",
+    "dates": [
+      "2023-06-01"
+    ],
+    "created_at": "2023-05-30T11:43:13.696Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-30T11:43:13.696Z",
+    "attendees": []
   }
 ]
