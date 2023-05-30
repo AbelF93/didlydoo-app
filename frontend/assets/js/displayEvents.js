@@ -1,4 +1,4 @@
-// import { deleteEvent } from "./deleteEvent.js";
+import { deleteEvent } from "./deleteEvent.js";
 
 export function displayEventsInfo() {
   const eventList = document.getElementById("event-list");
@@ -9,16 +9,16 @@ export function displayEventsInfo() {
         //getting all event objects
         for (let i = 0; i < json.length; i++) {
           let a = json[i];
-          console.log(a.name);
-          console.log(a.author);
-          console.log(a.description);
+          // console.log(a.name);
+          // console.log(a.author);
+          // console.log(a.description);
           for (let j = 0; j < a.dates.length; j++) {
             let day = a.dates[j];
-            console.log(day.date);
+            // console.log(day.date);
             for (let atd = 0; atd < day.attendees.length; atd++) {
               let eventAttendees = day.attendees[atd];
-              console.log("attendees: " + eventAttendees.name);
-              console.log("available: " + eventAttendees.available);
+              // console.log("attendees: " + eventAttendees.name);
+              // console.log("available: " + eventAttendees.available);
             }
           }
         }
@@ -32,16 +32,18 @@ export function displayEventsInfo() {
           eventDescription.textContent = json[i].description;
           eventDescription.setAttribute("class", "event-description");
 
-          console.log(json[i].id);
           let idEvent = json[i].id;
           let deleteButton = document.createElement("button");
           deleteButton.classList.add("delete-button");
           deleteButton.textContent = "Delete";
           eventContainer.appendChild(deleteButton);
           // deleteButton.addEventListener("click",deleteEvent(idEvent));
-          deleteButton.addEventListener("click", (idEvent) => {
-            deleteEvent(idEvent);
-          });
+          // deleteButton.addEventListener("click", () => {
+          //   deleteEvent(idEvent);
+          //   // console.log("click");
+
+          // });
+          console.log("id => "+json[i].id);
 
           eventContainer.appendChild(eventName);
           eventContainer.appendChild(eventDescription);
