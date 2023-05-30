@@ -37,13 +37,12 @@ export function displayEventsInfo() {
           deleteButton.classList.add("delete-button");
           deleteButton.textContent = "Delete";
           eventContainer.appendChild(deleteButton);
+          //Cette fonction pue la mort
           // deleteButton.addEventListener("click",deleteEvent(idEvent));
-          // deleteButton.addEventListener("click", () => {
-          //   deleteEvent(idEvent);
-          //   // console.log("click");
-
-          // });
-          console.log("id => "+json[i].id);
+          deleteButton.addEventListener("click", () => {
+            deleteEvent(idEvent);
+          });
+          console.log("id => " + json[i].id);
 
           eventContainer.appendChild(eventName);
           eventContainer.appendChild(eventDescription);
