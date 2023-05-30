@@ -1,3 +1,63 @@
-* {
-  background-color: lightblue;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Lobster&family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+body {
+  background: linear-gradient(#0e7391, #e07bb2, #f5a13b) no-repeat;
+  min-height: 100vh;
+}
+body div form {
+  margin-top: 30px;
+  text-align: center;
+}
+body div form input {
+  background-color: #00a8ff;
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  height: 35px;
+}
+body div form button {
+  background-color: #0266c8;
+  border: none;
+  border-radius: 25px;
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+}
+body div form button:hover {
+  color: #ffffff;
+  background-color: #db3eb1;
+}
+body div:nth-child(2) {
+  margin-top: 20px;
+  text-align: center;
+}
+body div:nth-child(2) .event-description {
+  padding-bottom: 15px;
+  font-family: Asap, sans-serif;
+}
+body div:nth-child(2) div {
+  background-color: rgba(244, 175, 195, 0.8352941176);
+  border-radius: 12px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+body div:nth-child(2) h2 {
+  font-family: "Lobster", cursive;
+}
+body div:nth-child(2) .delete-button {
+  margin-top: 10px;
+  width: 70px;
+  font-family: "Kanit", sans-serif;
+  background-color: #b28bc0;
+  border: none;
+  border-radius: 5px;
+  cursor: grab;
+  transition: all 0.2s ease-in-out;
+}
+body div:nth-child(2) .delete-button:hover {
+  transform: scale(1.2);
+  background-color: #dd6070;
 }/*# sourceMappingURL=style.css.map */
