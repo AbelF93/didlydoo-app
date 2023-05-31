@@ -8,7 +8,7 @@ export function editEvent(id, name, author, description) {
             <input type="date" id="createEvent-form-date-modale" required>
             <input type="text" id="createEvent-form-author-modale" value=${author} required>
             <input type="text" id="createEvent-form-description-modale"  value=${description} required>
-            <button type="submit" id="edit-event-button">Add Event</button>
+            <button type="submit" id="edit-event-button">Edit Event</button>
     </form>
 `;
   // console.log(name, author, description);

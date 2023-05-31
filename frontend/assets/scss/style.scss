@@ -3,8 +3,8 @@
 body{
     background: linear-gradient(#0e7391, #e07bb2, #f5a13b) no-repeat;
     min-height: 100vh;
-
-    div{
+    // display: flex;
+    #createEvent-container{
         form{
             margin-top: 30px;
             text-align: center;
@@ -32,14 +32,14 @@ body{
             }
         }
     }
-    div:nth-child(2){
+    #event-list{
         margin-top: 20px;
         text-align: center;
         .event-description{
             padding-bottom: 15px;
             font-family: Asap, sans-serif;
         }
-        div{
+        .event-item{
             background-color: #f4afc3d5;
             border-radius: 12px;
             margin-left: 125px;
@@ -51,8 +51,10 @@ body{
         h2{
             font-family: 'Lobster', cursive;
         }
-        
         .delete-button{
+            margin-right: 5px;
+        }
+        button{
             margin-top: 10px;
             width: 70px;
             font-family: 'Kanit', sans-serif;
@@ -66,6 +68,44 @@ body{
                 background-color: #dd6070;
               }
         }
-        
-}
+    }
+    dialog{
+        border: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background-image: url(https://pbs.twimg.com/media/DUiwb1RX0AETRSN.jpg);
+        form{
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 300px;
+        }
+
+        input{
+            background-color: #f5a13b94;
+            color: #510a5a;
+            text-align: center;
+            height: 20px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 2px solid rgb(206, 78, 157);
+            margin-bottom: 15px;
+        }
+        #createEvent-form-date-modale{
+            margin-left: 37px;
+        }
+        button{
+            margin-left: 10px;
+            background-color: #f890e7;
+            cursor: pointer;
+            border: none;
+            width: 75px;
+            height: 25px;
+            border-radius: 35px;
+            &:hover{
+                background-color: #994a95;
+            }
+        }
+    }
 }

@@ -4,11 +4,11 @@ body {
   background: linear-gradient(#0e7391, #e07bb2, #f5a13b) no-repeat;
   min-height: 100vh;
 }
-body div form {
+body #createEvent-container form {
   margin-top: 30px;
   text-align: center;
 }
-body div form input {
+body #createEvent-container form input {
   background-color: #00a8ff;
   border-radius: 12px;
   border: none;
@@ -18,7 +18,7 @@ body div form input {
   margin-bottom: 5px;
   height: 35px;
 }
-body div form button {
+body #createEvent-container form button {
   background-color: #0266c8;
   border: none;
   border-radius: 25px;
@@ -26,28 +26,31 @@ body div form button {
   width: 100px;
   cursor: pointer;
 }
-body div form button:hover {
+body #createEvent-container form button:hover {
   color: #ffffff;
   background-color: #db3eb1;
 }
-body div:nth-child(2) {
+body #event-list {
   margin-top: 20px;
   text-align: center;
 }
-body div:nth-child(2) .event-description {
+body #event-list .event-description {
   padding-bottom: 15px;
   font-family: Asap, sans-serif;
 }
-body div:nth-child(2) div {
+body #event-list .event-item {
   background-color: rgba(244, 175, 195, 0.8352941176);
   border-radius: 12px;
   margin-left: 125px;
   margin-right: 125px;
 }
-body div:nth-child(2) h2 {
+body #event-list h2 {
   font-family: "Lobster", cursive;
 }
-body div:nth-child(2) .delete-button {
+body #event-list .delete-button {
+  margin-right: 5px;
+}
+body #event-list button {
   margin-top: 10px;
   width: 70px;
   font-family: "Kanit", sans-serif;
@@ -57,7 +60,45 @@ body div:nth-child(2) .delete-button {
   cursor: grab;
   transition: all 0.2s ease-in-out;
 }
-body div:nth-child(2) .delete-button:hover {
+body #event-list button:hover {
   transform: scale(1.2);
   background-color: #dd6070;
+}
+body dialog {
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-image: url(https://pbs.twimg.com/media/DUiwb1RX0AETRSN.jpg);
+}
+body dialog form {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 300px;
+}
+body dialog input {
+  background-color: rgba(245, 161, 59, 0.5803921569);
+  color: #510a5a;
+  text-align: center;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(206, 78, 157);
+  margin-bottom: 15px;
+}
+body dialog #createEvent-form-date-modale {
+  margin-left: 37px;
+}
+body dialog button {
+  margin-left: 10px;
+  background-color: #f890e7;
+  cursor: pointer;
+  border: none;
+  width: 75px;
+  height: 25px;
+  border-radius: 35px;
+}
+body dialog button:hover {
+  background-color: #994a95;
 }/*# sourceMappingURL=style.css.map */

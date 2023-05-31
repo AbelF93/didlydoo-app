@@ -31,6 +31,7 @@ export function displayEventsInfo() {
           let description = json[i].description;
           //create contain
           let eventContainer = document.createElement("div");
+          eventContainer.setAttribute("class", "event-item");
           let eventName = document.createElement("h2");
           eventName.textContent = json[i].author + "'s " + json[i].name;
           eventName.setAttribute("class", "event-name");
