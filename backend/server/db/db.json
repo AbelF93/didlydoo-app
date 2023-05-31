@@ -1,28 +1,15 @@
 [
   {
-    "id": "c4cc7a4548b1",
-    "name": "Bonsaie Cutting",
+    "id": "7229b627439b",
+    "name": "Fiesta chez Gigi",
     "author": "Bibou",
-    "description": "Vous venez et vous coupez",
-    "dates": [
-      "2023-06-01"
-    ],
-    "created_at": "2023-05-31T07:26:57.268Z",
-    "num_modification": 0,
-    "last_modification": "2023-05-31T07:26:57.268Z",
-    "attendees": []
-  },
-  {
-    "id": "5a4bd94e54f6",
-    "name": "sdsdsd",
-    "author": "Tony",
     "description": "Si vous avez la référence venez!",
     "dates": [
       "2023-06-01"
     ],
-    "created_at": "2023-05-31T07:21:16.090Z",
+    "created_at": "2023-05-31T08:42:51.736Z",
     "num_modification": 0,
-    "last_modification": "2023-05-31T07:21:16.090Z",
+    "last_modification": "2023-05-31T08:42:51.736Z",
     "attendees": []
   },
   {

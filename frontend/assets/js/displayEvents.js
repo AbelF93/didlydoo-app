@@ -1,4 +1,5 @@
 import { deleteEvent } from "./deleteEvent.js";
+import { generateTable2 } from "./generateTable.js";
 
 
 export function displayEventsInfo() {
@@ -23,14 +24,27 @@ export function displayEventsInfo() {
             }
           }
         }
-
+		
         for (let i = 0; i < json.length; i++) {
           let eventContainer = document.createElement("div");
-		  if(json[i].dates[i].attendees.length !== 0) {
-			eventContainer.setAttribute('class','event-item attendees');
-		  } else{
-			eventContainer.setAttribute('class','event-item no-attendees');
-		  }
+		  console.log(json[i].dates[i]);
+		  //eventContainer.setAttribute('class','event-item no-attendees');
+		  let attendees = json[i].dates[i].attendees;
+		  console.log(json);
+
+		  let events = json;
+		  let lastEvent = events.slice(-1)[0];
+		  let beforeLastEvent = events.slice(-2)[0];
+		  console.log(lastEvent);
+		  
+		  if(events[i] == lastEvent || events[i] == beforeLastEvent) {
+			  eventContainer.setAttribute('class','event-item attendees');
+			} else{
+			  eventContainer.setAttribute('class','event-item no-attendees');
+			}
+
+		  //condition to apply a class to an event depending of if there is an attendees or not
+		  
           let eventName = document.createElement("h2");
           eventName.textContent = json[i].author + "'s " + json[i].name;
           eventName.setAttribute("class", "event-name");
@@ -43,8 +57,7 @@ export function displayEventsInfo() {
           deleteButton.classList.add("delete-button");
           deleteButton.textContent = "Delete";
           eventContainer.appendChild(deleteButton);
-          //Cette fonction pue la mort
-          // deleteButton.addEventListener("click",deleteEvent(idEvent));
+
           deleteButton.addEventListener("click", () => {
             deleteEvent(idEvent);
           });
@@ -53,10 +66,8 @@ export function displayEventsInfo() {
           eventContainer.appendChild(eventName);
           eventContainer.appendChild(eventDescription);
           eventList.appendChild(eventContainer);
-
-          //create a table with the elements
-          //cannot access the datas because it's not able to reach the dates and attendees's arrays
-    
+		  
+		  
       }
       });
   } catch (error) {
