@@ -1,23 +1,11 @@
-export function generateTable2() {
-        const eventContainer = document.getElementsByClassName('event-item');
-      if(eventContainer.className = 'attendees'){
-        fetch("http://localhost:3000/api/attendees/")
-        .then((response) => response.json())
-        .then((jsonAttendees) => {
-          console.log(jsonAttendees);
-          
-          for (let i = 0; i < jsonAttendees.length; i++) {
-            console.log(jsonAttendees[i].name);
-          }
-        })
-        .catch((error) => {
-          console.log("erreur");
-        });
-        const datesArray = json[i].dates[i];
+
+export const Table = document.querySelector('table');
+export function generateTable(){      
+      /*  const datesArray = json[i].dates[i];
          const attendeesArray = datesArray.attendees;
            
-              console.log(json[i].dates[i].date);
-         console.log(attendeesArray);
+              //console.log(nameValue);*/
+        const eventContainer = document.getElementsByClassName('event-item');
          const eventTable = document.createElement("table");
          
          
@@ -25,20 +13,20 @@ export function generateTable2() {
           tableRow.textContent = "attendees";
           
            let attendeeRow = document.createElement("tr");
-           attendeeRow.textContent = attendeesArray[0].name;
+           attendeeRow.textContent = 'attendee name';//attendeesArray[0].name
          
            let attendeeRow2 = document.createElement("tr");
-           attendeeRow2.textContent = attendeesArray[1].name;
+           attendeeRow2.textContent = 'attendee name';//attendeesArray[1].name
       
          const dateCell = document.createElement('td');
-         dateCell.textContent = datesArray.date;
+         dateCell.textContent = 'YYY-MM-DD';//datesArray.date
          
          let statusCell = document.createElement('td');
-         statusCell.textContent= attendeesArray[0].available;
+         statusCell.textContent= 'availability' ;//attendeesArray[0].available
          statusCell.style.border= "solid"; 
          
          let statusCell2 = document.createElement('td');
-         statusCell2.textContent= attendeesArray[1].available;
+         statusCell2.textContent= 'availability';//attendeesArray[1].available
          statusCell2.style.border= "solid";
          
          
@@ -48,12 +36,8 @@ export function generateTable2() {
          eventTable.appendChild(tableRow);
          eventTable.appendChild(attendeeRow);
          eventTable.appendChild(attendeeRow2);
+         eventContainer.appendChild(eventTable);
          dateCell.style.border= "solid";
          statusCell.style.border= "solid";
          attendeeRow.style.border= "solid";
-         eventContainer.appendChild(eventTable);
-        } }
-    
-
-
-      
+        }

@@ -1,5 +1,8 @@
 import { deleteEvent } from "./deleteEvent.js";
-import { generateTable2 } from "./generateTable.js";
+import { Table, generateTable } from "./generateTable.js";
+
+
+export const eventItem = document.getElementsByClassName('event-item'); 
 
 export function displayEventsInfo() {
   const eventList = document.getElementById("event-list");
@@ -10,17 +13,14 @@ export function displayEventsInfo() {
         // Getting all event objects
         json.forEach((event) => {
           const eventContainer = document.createElement("div");
-          console.log(event.dates.attendees);
+		  eventContainer.setAttribute('class','event-item');
           // eventContainer.setAttribute('class','event-item no-attendees');
           // let attendees = event.dates[i].attendees;
           console.log(json);
 
-          /*const events = json;
-          const lastEvent = events.slice(-1)[0];
-          const beforeLastEvent = events.slice(-2)[0];
-          console.log(lastEvent);
+        
 
-          if (event.dates.attendees !== "") {
+         /* if (event.dates[0].attendees !== ) {
             eventContainer.setAttribute('class','event-item attendees');
           } else {
             eventContainer.setAttribute('class','event-item no-attendees');
@@ -45,13 +45,52 @@ export function displayEventsInfo() {
             deleteEvent(idEvent);
           });
           console.log("id => " + event.id);
-
+		  
           eventContainer.appendChild(eventName);
           eventContainer.appendChild(eventDescription);
           eventList.appendChild(eventContainer);
+		  
+		 //generate table
+		 
+         const eventTable = document.createElement("table");
+         
+         
+          let tableRow = document.createElement("tr");
+		  let attendeeRow = document.createElement("tr");
+		  let attendeeRow2 = document.createElement("tr");
+		  const dateCell = document.createElement('td');
+		  let statusCell = document.createElement('td');
+		  let statusCell2 = document.createElement('td');
+          tableRow.textContent = "attendees";
+          
+          
+           attendeeRow.textContent = 'attendee name';//attendeesArray[0].name          
+           attendeeRow2.textContent = 'attendee name';//attendeesArray[1].name
+           dateCell.textContent = 'YYY-MM-DD';//datesArray.date
+           statusCell.textContent= 'availability' ;//attendeesArray[0].available
+		   statusCell2.textContent= 'availability';//attendeesArray[1].available
+		   
+		   statusCell2.style.border= "solid";
+		   statusCell.style.border= "solid"; 
+         
+         
+
+         
+         
+         tableRow.appendChild(dateCell);
+         attendeeRow.appendChild(statusCell);
+         attendeeRow2.appendChild(statusCell2);
+         eventTable.appendChild(tableRow);
+         eventTable.appendChild(attendeeRow);
+         eventTable.appendChild(attendeeRow2);
+         eventContainer.appendChild(eventTable);
+         dateCell.style.border= "solid";
+         statusCell.style.border= "solid";
+         attendeeRow.style.border= "solid";
+		
         });
 
-        // generateTable2();
+        
       });
   } catch (error) {
     console.error("Error:", error);
