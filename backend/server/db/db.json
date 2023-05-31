@@ -1,15 +1,28 @@
 [
   {
-    "id": "7229b627439b",
-    "name": "Fiesta chez Gigi",
+    "id": "bca8c4a03068",
+    "name": "Merguez Party",
     "author": "Bibou",
-    "description": "Si vous avez la référence venez!",
+    "description": "Vous venez et vous coupez",
     "dates": [
       "2023-06-01"
     ],
-    "created_at": "2023-05-31T08:42:51.736Z",
+    "created_at": "2023-05-31T09:46:41.039Z",
     "num_modification": 0,
-    "last_modification": "2023-05-31T08:42:51.736Z",
+    "last_modification": "2023-05-31T09:46:41.039Z",
+    "attendees": []
+  },
+  {
+    "id": "1edb62385338",
+    "name": "Fiesta chez Gigi",
+    "author": "Tony",
+    "description": "venez nombreux",
+    "dates": [
+      "2023-06-01"
+    ],
+    "created_at": "2023-05-31T09:41:25.379Z",
+    "num_modification": 0,
+    "last_modification": "2023-05-31T09:41:25.379Z",
     "attendees": []
   },
   {

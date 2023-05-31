@@ -1,25 +1,25 @@
 export function generateTable2() {
-    fetch("http://localhost:3000/api/attendees/")
-      .then((response) => response.json())
-      .then((jsonAttendees) => {
-        console.log(jsonAttendees);
-        
-        for (let i = 0; i < jsonAttendees.length; i++) {
-          console.log(jsonAttendees[i].name);
-        }
-      })
-      .catch((error) => {
-        console.log("erreur");
-      });
-
+        const eventContainer = document.getElementsByClassName('event-item');
+      if(eventContainer.className = 'attendees'){
+        fetch("http://localhost:3000/api/attendees/")
+        .then((response) => response.json())
+        .then((jsonAttendees) => {
+          console.log(jsonAttendees);
+          
+          for (let i = 0; i < jsonAttendees.length; i++) {
+            console.log(jsonAttendees[i].name);
+          }
+        })
+        .catch((error) => {
+          console.log("erreur");
+        });
         const datesArray = json[i].dates[i];
          const attendeesArray = datesArray.attendees;
-         const eventContainer = document.getElementsByClassName('event-item');
-            if(attendeesArray[i] !== null){
+           
               console.log(json[i].dates[i].date);
          console.log(attendeesArray);
          const eventTable = document.createElement("table");
-         eventContainer.setAttribute('class', 'event-item attendees');
+         
          
           let tableRow = document.createElement("tr");
           tableRow.textContent = "attendees";
