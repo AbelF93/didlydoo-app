@@ -1,6 +1,6 @@
 # __DIDLYDOO-APP__
 
-This exercice consists of creating an app that permit to peoples to log and add their disponibilities for picking a specific date for an event.
+This exercice consists of creating an app that permit to peoples to0 add their disponibilities and pick a specific date for an event.
 We have worked as a team with the collaboration of Anthony Denayer and Noa Cayphas.
 ------
 ## __Method:__
